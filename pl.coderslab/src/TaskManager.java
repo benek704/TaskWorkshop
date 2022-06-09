@@ -1,4 +1,4 @@
-package pl.coderslab;
+package pl.coderslab.src;
 
 public class TaskManager {
     //qqq
