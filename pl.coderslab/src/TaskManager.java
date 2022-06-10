@@ -120,7 +120,7 @@ public class TaskManager {
 
             }
         }
-        public static String[][] removeTask(String[][] listData) {
+        public static void removeTask(String[][] listData) {
             out.println("Please select number to remove");
             Scanner scanner = new Scanner(in);
             int number = scanner.nextInt();
@@ -136,7 +136,6 @@ public class TaskManager {
                 out.println("Please select correct number");
                 scanner.nextInt();
             }
-            return listData;
         }
 
         public static void closeProgram(String [][]listToSave, String filename){
@@ -155,9 +154,10 @@ public class TaskManager {
                 throw new RuntimeException(e);
             }
 
-            System.exit(0);
+
         }
         System.out.println(ConsoleColors.RED + "Bye, bye");
+        System.exit(0);
         }
 }
 
